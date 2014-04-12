@@ -5,7 +5,8 @@ Display and Replace the XML image information in WIM files.
 
 Output from /?:
 
-```WimXML - Display and Replace the XML image information in WIM files.
+```
+WimXML - Display and Replace the XML image information in WIM files.
 
 Version: 0.0.1
 
@@ -21,11 +22,13 @@ Version: 0.0.1
 
 Examples:
       wimxml.exe /wimfile mywim.wim /showxml
-      wimxml.exe /wimfile "C:\myFolder\install.wim" /savexml C:\myXML.xml```
+      wimxml.exe /wimfile "C:\myFolder\install.wim" /savexml C:\myXML.xml
+```
 
 	  
 Example embedded WIM XML info, this from x86 PE 5:
-```<WIM>
+```
+<WIM>
    <TOTALBYTES>139846944</TOTALBYTES>
    <IMAGE INDEX="1">
       <DIRCOUNT>2703</DIRCOUNT>
@@ -42,7 +45,7 @@ Example embedded WIM XML info, this from x86 PE 5:
       </LASTMODIFICATIONTIME>
       <WINDOWS>
          <ARCH>0</ARCH>
-         <PRODUCTNAME>Microsoftr Windowsr Operating System</PRODUCTNAME>
+         <PRODUCTNAME>Microsoft® Windows® Operating System</PRODUCTNAME>
          <EDITIONID>WindowsPE</EDITIONID>
          <INSTALLATIONTYPE>WindowsPE</INSTALLATIONTYPE>
          <PRODUCTTYPE>WinNT</PRODUCTTYPE>
@@ -63,7 +66,8 @@ Example embedded WIM XML info, this from x86 PE 5:
       <NAME>Microsoft Windows PE (x86)</NAME>
       <DESCRIPTION>Microsoft Windows PE (x86)</DESCRIPTION>
    </IMAGE>
-</WIM>```
+</WIM>
+```
 
 The binaries were compiled with Visual Studio 2013, so you'll need the [Visual C++ 2013 redistributables](http://www.microsoft.com/en-us/download/details.aspx?id=40784) installed to run them as is. Of course, you can also compile source.cpp with the compiler of your choice as well.
 
