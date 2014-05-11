@@ -71,4 +71,6 @@ Example embedded WIM XML info, this from x86 PE 5:
 
 The binaries were compiled with Visual Studio 2013, so you'll need the [Visual C++ 2013 redistributables](http://www.microsoft.com/en-us/download/details.aspx?id=40784) installed to run them as is. Of course, you can also compile source.cpp with the compiler of your choice as well.
 
-I wrote this as Windows Deployment Services shows users the Date Modified from the WIM in Windows Setup. I would much rather show the create date, but couldn't find a way to change that. So I built this to swap them and ended up generalizing it a bit to show, save, and replace the entire XML. You can read a little bit more on this at https://blog.internals.io.
+I wrote this as the Date Modified information from the WIM is shown in Windows Setup when you use Windows Deployment Services. I would much rather see the create date, but couldn't find a way to change that. So I built this to swap them and ended up generalizing it a bit to show, save, and replace the entire XML. You can read a little bit more on this at https://blog.internals.io.
+
+I should also note that the code is not structured ideally. Rather than building helper functions or generalizing blocks of code, I repeated code in each functions for the different switches/scenarios. Given the small scope of this, it made it easier for me to pop back in later and read a given function and see what's happening.
